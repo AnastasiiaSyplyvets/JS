@@ -398,8 +398,13 @@
 // задачи 7 урок
 
 
-const arr = 'var_test_text';
+// const arr = 'var_test_text';
 
-const w = arr.replace(/_/g, "");
+// const w = arr.replace(/_/g, "");
 
-console.log(w)
+// console.log(w)
+
+const scrollHandler = () => {
+    console.log("hello, im scroll")
+};
+window.addEventListener('scroll', _.throttle(scrollHandler, 300))
